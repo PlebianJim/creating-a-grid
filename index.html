@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Odin Project - Creating a Grid</title>
+</head>
+<body>
+    <h2>Setting up  a grid</h2>
+    <h3>Grid container</h3>
+    <p>Think about the CSS Grid in terms of containers and items</p>
+    <p>When you make an element a grid container, it "contains" the whole grid</p>
+    <p>An element is turned into a grid by giving it the <strong>display</strong> property <strong>grid</strong></p>
+    <h4>Example 1</h4>
+    <div class="container-example-one">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+    </div>
+    <p>the above example has been given the display property of grid but it does not have any of the required attributes to lay it out as a grid</p>
+    <p>To do that, we need to use the grid-template-columns and grid-tempalte-rows attributes on the grid container/parent element</p>
+    <h4>Example 2</h4>
+    <div class="container-example-two">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+    </div>
+    <p>The example above places the 4 items into a 2x2 grid by providing 2 parameters to the column and row sections, each at 50px each. This means that each item will be veritcally separated by 50px and vertically by 50px</p>
+    <h4>Example 3</h4>
+    <div class="container-example-three">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+    </div>
+    <p>In the example above, 3 column attributes have been provided meaning that the layout sets the horizontal sections and then places the final item on the next line (as there is still 2 vertical rows defined)</p>
+    <h4>Example 4</h4>
+    <p>Grid also provides a shorthand to define the rows and columns without needing to write out both the columns and rows</p>
+    <p>grid-template</p>
+    <div class="container-example-four">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+    </div>
+    <h4>Example 5</h4>
+    <div class="container-example-five">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+    </div>
+</body>
+</html>
